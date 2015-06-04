@@ -60,8 +60,10 @@ public class Driver {
             //while instruction is not finish
             for(String e : inst)
             {
+                System.out.println(e);
                 System.out.println(tp.getTape());
                 System.out.println("Pointer : " + tp.getPointer());
+                System.out.println("Last Char : " + tp.getLastChar());
                 System.out.println();
                 
                 //check instruction group (by instruction length)
@@ -71,22 +73,12 @@ public class Driver {
                     if(e.equals("GR"))
                     {
                         tp.goRight();
-                        
-                        if(tp.getCurr() != ' ')
-                        {
-                            tp.setLastChar(tp.getCurr());
-                        }
                     }
                     
                     //go left instruction
                     else if(e.equals("GL"))
                     {
                         tp.goLeft();
-                        
-                        if(tp.getCurr() != ' ')
-                        {
-                            tp.setLastChar(tp.getCurr());
-                        }
                     }
                     
                     //write empty instruction
@@ -211,6 +203,11 @@ public class Driver {
                         }
                     }
                 }
+            }
+            
+            if(tp.getCurr() != ' ')
+            {
+                tp.setLastChar(tp.getCurr());
             }
             
             //if condition exist, or end
