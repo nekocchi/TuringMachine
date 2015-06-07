@@ -6,7 +6,6 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import view.MachineFrame;
 import view.Synthetica;
 
