@@ -37,6 +37,8 @@ public class MachineFrame extends JFrame{
     {
         super("Turing Machine");
         
+        setIconImage(new ImageIcon("images/icon.png").getImage());
+        
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
         initcomponents();

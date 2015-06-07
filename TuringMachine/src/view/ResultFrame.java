@@ -27,7 +27,7 @@ public class ResultFrame extends JFrame{
     {
         super("Turing Machine");
         
-        //setIconImage(new ImageIcon("").getImage());
+        setIconImage(new ImageIcon("images/icon.png").getImage());
         
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
